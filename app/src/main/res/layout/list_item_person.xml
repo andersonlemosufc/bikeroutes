@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/list_item_person"
+    android:background="@color/colorPrimaryLight1"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <ImageView
+        android:padding="1dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:id="@+id/ivUserPhoto"
+        />
+    <TextView
+        android:id="@+id/tvNameUser"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text=""
+        style="@style/event_startEnd"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivOrganizer"
+        android:src="@drawable/organise"
+        android:scaleType="fitCenter"
+        android:background="@color/colorPrimaryLight1"
+        android:layout_margin="5dp"
+        android:padding="4dp" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivInviteFriend"
+        android:src="@drawable/ic_add_white_24dp"
+        android:scaleType="fitCenter"
+        android:background="@color/colorPrimaryLight1"
+        android:layout_margin="5dp"
+        android:padding="4dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivAddFriend"
+        android:src="@android:drawable/ic_input_add"
+        android:scaleType="fitCenter"
+        android:background="@color/colorPrimaryLight1"
+        android:layout_margin="5dp"
+
+        android:padding="4dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivDeleteFriend"
+        android:src="@android:drawable/ic_delete"
+        android:scaleType="fitCenter"
+        android:background="@color/colorPrimaryLight1"
+        android:layout_margin="5dp"
+        android:padding="4dp" />
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".activities.UserDerscriptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageUser"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal" /> <!-- The user photo is visible if there is one -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:id="@+id/tvUserName"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/tvSettings"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"
+            android:hint="@string/name"
+            android:layout_gravity="center_horizontal"
+            style="@style/etSettings"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/rgSex"
+            android:baselineAligned="false"
+            android:padding="20dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbFemale"
+                android:drawableRight="@drawable/female"
+                android:layout_marginRight="30dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbMale"
+                android:drawableRight="@drawable/male" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvUserDescription"
+            android:id="@+id/tvUserDescription"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/tvSettings"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/etUserDescription"
+            android:id="@+id/etUserDescription"
+            android:layout_gravity="center_horizontal"
+            style="@style/etSettings"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:id="@+id/btSave"
+            style="@style/button"
+            android:onClick="saveButtonClicked"
+            />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">On My Way</string>
+    <string name="UserDescriptionActivityLabel">Konto</string>
+    <string name="ad_your_friend">jako znajomy</string>
+    <string name="add_an_event_description">Dodaj opis wydarzenia</string>
+    <string name="add_friend">Dodaj znajomego</string>
+    <string name="add_friends">Dodaj znajomych</string>
+    <string name="add_photo">Dodaj zdjecie</string>
+    <string name="added_as_friend">Dodaj jako znajomy</string>
+    <string name="address_found">Znaleziono adres</string>
+    <string name="already_friend">Jestes juz znajomym z</string>
+    <string name="already_invited">Juz go zaprosiles</string>
+    <string name="already_participating">Juz bierzesz udzial w tym wydarzeniu</string>
+    <string name="btn_search_event">Szukaj wydarzenia</string>
+    <string name="change_your_e_mail">Zmien swoj adres e-mail</string>
+    <string name="change_your_password">Zmien haslo</string>
+    <string name="choose_a_date">Wybierz date</string>
+    <string name="choose_a_location">Wybierz lokalizacje</string>
+    <string name="choose_a_time">Wybierz czas</string>
+    <string name="choose_an_address">Wybierz adres</string>
+    <string name="choose_end">Wybierz punkt koncowy</string>
+    <string name="choose_new_mail"> Wybierz nowy adrers e-mail</string>
+    <string name="choose_new_password">Wybierz nowe haslo</string>
+    <string name="choose_start">Wybierz punkt poczatkowy</string>
+    <string name="createAccountActivityLabel">Utworz konto</string>
+    <string name="createEventActivityLabel">Utworz wydarzenie</string>
+    <string name="create_account">Utworz konto</string>
+    <string name="create_event">Utworz wydarzenie</string>
+    <string name="credits">Autorzy</string>
+    <string name="creating_event">Tworzenie wydarzenia</string>
+    <string name="date">Data: %</string>
+    <string name="distance">Odleglosc:</string>
+    <string name="distance_with_value">"Odleglosc: %1$s"</string>
+    <string name="do_you_really_want_to_add">"Czy jestes pewien, ze chcesz dodac"</string>
+    <string name="do_you_really_want_to_invite">Czy na pewno chcesz zaprosic </string>
+    <string name="do_you_really_want_to_remove">"Czy na pewno chcesz usunac"</string>
+    <string name="duration">"Czas trwania:"</string>
+    <string name="duration_with_value">"Czas trwania: %1$s"</string>
+    <string name="e_mail">E-mail</string>
+    <string name="edit_account">Edytuj konto</string>
+    <string name="ellinoora_laaksonen" translatable="false"></string>
+    <string name="end">Koniec:</string>
+    <string name="error_connection">To byl maly problem. Sprawdz polaczenie internetowe.</string>
+    <string name="error_creating_event">Blad przy tworzeniu wydarzenia!</string>
+</resources>

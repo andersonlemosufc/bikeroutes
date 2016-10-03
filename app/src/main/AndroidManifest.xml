@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.upv.sdm.labs.bikeroutes">
+
+    <!-- permissions required to access location providers -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activities.SearchEventActivity"
+            android:label="@string/searchEventsActivityLabel"
+            android:parentActivityName=".activities.DashboardActivity"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DashboardActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activities.CreateAccountActivity"
+            android:label="@string/createAccountActivityLabel"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ResetPasswordActivity"
+            android:label="@string/resetPasswordActivityLabel"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CreateEventActivity"
+            android:label="@string/createEventActivityLabel"
+            android:parentActivityName=".activities.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EventDescriptionActivity"
+            android:label="@string/eventDescriptionActivityLabel"
+            android:parentActivityName=".activities.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.MyEventsActivity"
+            android:label="@string/myEventsActivityLabel"
+            android:parentActivityName=".activities.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".activities.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="es.upv.sdm.labs.bikeroutes.activities.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.UserDerscriptionActivity"
+            android:label="@string/UserDescriptionActivityLabel"
+            android:parentActivityName=".activities.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="es.upv.sdm.labs.bikeroutes.activities.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EditAccountActivity"
+            android:label="@string/UserDescriptionActivityLabel"
+            android:parentActivityName=".activities.UserDerscriptionActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="es.upv.sdm.labs.bikeroutes.activities.UserDerscriptionActivity" />
+        </activity>
+        <activity
+            android:name=".activities.MyFriendsActivity"
+            android:label="@string/my_friends"
+            android:parentActivityName=".activities.UserDerscriptionActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.UserDerscriptionActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AddFriendsActivity"
+            android:label="@string/add_friends"
+            android:parentActivityName=".activities.MyFriendsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MyFriendsActivity" />
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activities.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".activities.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DashboardActivity" />
+        </activity>
+        <activity android:name=".activities.TesteActivity" />
+        <activity
+            android:name=".activities.CreditActivity"
+            android:label="@string/title_activity_credit"
+            android:parentActivityName=".activities.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.MySettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".activities.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".activities.InviteActivity"
+            android:label="Invite to the event"
+            android:parentActivityName=".activities.EventDescriptionActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.EventDescriptionActivity" />
+        </activity>
+    </application>
+
+</manifest>

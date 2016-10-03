@@ -1,0 +1,19 @@
+<resources>
+    <!--
+
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=C9:C9:AF:2A:D1:2D:CC:CB:EB:15:AC:BA:0D:BA:69:73:EE:0F:2C:A3%3Bes.upv.sdm.labs.bikeroutes.activities
+
+    You can also add your credentials to an existing key, using this line:
+    C9:C9:AF:2A:D1:2D:CC:CB:EB:15:AC:BA:0D:BA:69:73:EE:0F:2C:A3;es.upv.sdm.labs.bikeroutes.activities
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBi-mGhSiZIOyRk2pz7PXIYiB3n7kFNjJI</string>
+</resources>

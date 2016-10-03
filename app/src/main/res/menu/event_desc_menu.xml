@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuParticipate"
+        android:icon="@drawable/ic_add_white_24dp"
+        android:title="@string/participate_in_this_event"
+        android:visible="true"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menuInvite"
+        android:icon="@drawable/ic_contact_mail_white_24dp"
+        android:title="@string/invite_friend"
+        android:visible="true"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menuShowRoute"
+        android:icon="@drawable/ic_room_white_24dp"
+        android:title="@string/show_route"
+        android:visible="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menuLogOut"
+        android:title="@string/log_out"
+        android:visible="true"
+        app:showAsAction="never"/>
+
+</menu>

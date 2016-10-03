@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuMyAccount"
+        android:icon="@drawable/ic_action_my_profile"
+        android:title="@string/my_account"
+        android:visible="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menuSettings"
+        android:icon="@drawable/ic_setting_dark"
+        android:title="@string/title_activity_settings"
+        android:visible="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menuMyEvents"
+        android:icon="@drawable/ic_action_my_events"
+        android:title="@string/my_events"
+        android:visible="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menuCredits"
+        android:title="@string/credits"
+        android:visible="true"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menuLogOut"
+        android:title="@string/log_out"
+        android:visible="true"
+        app:showAsAction="never"/>
+
+</menu>
